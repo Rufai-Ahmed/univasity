@@ -31,4 +31,11 @@ export class AppComponent {
   onFiltersChanged(filters: string[]) {
     this.selectedFilters = filters;
   }
+
+  isDarkMode: boolean = false;
+
+  toggleDarkMode: (theme: boolean) => void = (theme: boolean) =>
+    (this.isDarkMode = theme);
+
+  isShow: boolean = false;
 }
