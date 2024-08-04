@@ -7,7 +7,16 @@
         <i (click)="toggleMobileSider()" class="fa fa-bars"></i>
       </div>
 
-      <div class="text-xl font-bold cursor-pointer">
+      <div class="text-xl dark:block hidden font-bold cursor-pointer">
+        <a routerLink="/">
+          <img
+            src="/assets/images/logo-white.png"
+            alt="Univacity Logo"
+            class="h-8"
+          />
+        </a>
+      </div>
+      <div class="text-xl font-bold cursor-pointer dark:hidden">
         <a routerLink="/">
           <img src="/assets/images/logo.png" alt="Univacity Logo" class="h-8" />
         </a>

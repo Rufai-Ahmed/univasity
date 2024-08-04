@@ -8,7 +8,7 @@
 
   <div
     *ngIf="search"
-    class="w-full h-[40px] border rounded-[10px] pl-9 relative flex items-center dark:border-dark-border dark:bg-dark-input-bg"
+    class="w-full h-[40px] border rounded-[10px] pl-9 relative flex items-center dark:border-dark-border dark:bg-[#292F3D]"
   >
     <i
       class="fa-solid absolute left-3 fa-magnifying-glass dark:text-dark-icon"
@@ -30,7 +30,7 @@
         type="checkbox"
         [checked]="item === 'Associate (50)'"
         [id]="item"
-        class="dark:checked:bg-dark-checkbox"
+        class="dark:checked:bg-dark-checkbox dark:bg-transparent dark:accent-[#184EC9] dark:border-[#C4C9D4]"
       />
       <label [for]="item" class="truncate dark:text-dark-text">{{
         item
