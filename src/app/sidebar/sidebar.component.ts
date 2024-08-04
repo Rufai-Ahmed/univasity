@@ -2,18 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
 import { FilterComponentComponent } from '../filter-component/filter-component.component';
 import { iFilter } from '../../../interfaces';
-import { FormsModule } from '@angular/forms';
-import { MatSliderModule } from '@angular/material/slider';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [
-    CommonModule,
-    FilterComponentComponent,
-    MatSliderModule,
-    FormsModule,
-  ],
+  imports: [CommonModule, FilterComponentComponent],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss'],
 })
