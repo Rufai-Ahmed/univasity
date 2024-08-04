@@ -1,0 +1,21 @@
+<app-header
+  class="fixed z-50 w-full bg-white dark:bg-dark-background-one"
+></app-header>
+
+<main
+  class="container mx-auto min-h-[calc(100vh-120px)] dark:bg-dark-background dark:text-dark-text"
+>
+  <div class="flex justify-end">
+    <app-sidebar
+      class="hidden lg:block pl-6 xl:pl-0 dark:bg-dark-background dark:text-dark-text"
+    ></app-sidebar>
+    <app-mobile-sider class="lg:hidden z-[40000]"></app-mobile-sider>
+    <main
+      class="w-full lg:w-[calc(100%-260px)] p-5 md:p-14 dark:bg-dark-background dark:text-dark-text"
+    >
+      <app-content></app-content>
+    </main>
+  </div>
+</main>
+
+<app-footer class="dark:bg-dark-background dark:text-dark-text"></app-footer>
